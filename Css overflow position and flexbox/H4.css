@@ -1,0 +1,39 @@
+.r{
+    background-color: red;
+    height: 40vh;
+}
+.a{
+    background-color: blue;
+    height:70vh;
+    flex-grow: 1;
+    align-self: flex-start;
+
+}
+
+.g{
+    background-color: yellow;
+    height: 70vh;
+    flex-grow: 4;
+    align-self: stretch;
+}
+
+.v{
+    background-color: green;
+    height:14vh;
+    width: 100vw;
+    align-self: flex-end;
+
+}
+.flex-container{
+    background-color: ivory;
+    height: 100vh;  
+    display: flex;
+    flex-direction: column;
+    }
+
+.flex-middle-container {
+    display: flex;
+    flex-flow: wrap row;
+    height: 90vh;
+}
+

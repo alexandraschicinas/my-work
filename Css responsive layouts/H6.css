@@ -1,0 +1,101 @@
+@keyframes time {
+    0%   {
+        transform: rotate(0deg);
+        left: calc(50% + 10px);
+        top: calc(50%);
+    }
+    25% {
+        transform: rotate(90deg);
+        left: calc(50% + 10px);
+        top: calc(50%);
+    }
+    50% {
+        transform: rotate(180deg);
+        left: calc(50% + 10px);
+        top: calc(50%);
+    }
+    75% {
+        transform: rotate(270deg);
+        left: calc(50% + 10px);
+        top: calc(50%);
+    }
+    100% {
+        transform: rotate(360deg);
+        left: calc(50% + 10px);
+        top: calc(50%);
+    }
+  
+}
+
+body {
+    background-color: gray;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+
+
+}
+.c {
+    background-color: ivory;
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    align-self: center;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    box-shadow: 6px 8px 10px black;
+}
+
+#p{
+    background-color: white;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: 2px solid black;
+    position: absolute;
+    top: calc(50% - 10px);
+    left: calc(50% - 10px);
+    box-sizing: border-box;
+}
+
+#s {
+    background-color: red;
+    width: 100px;
+    height: 2.5px;
+    border-radius: 30%;
+    position: absolute;
+    left: calc(50% + 10);
+    top: calc(50%);
+    transform-origin: -10px 0px;
+    animation: time 60s infinite linear;
+}
+
+ #m {
+    background-color: black;
+    width: 150px;
+    height: 3px;
+    border-radius: 30%;
+    position: absolute;
+    left: calc(50% + 10px);
+    top: calc(50%);
+    transform-origin: -10px 0px;
+    animation: time 3600s infinite linear;
+    
+}
+
+
+#o {
+    background-color: black;
+    width: 120px;
+    height: 5px;
+    border-radius: 30%;
+    position: absolute;
+    left: calc(50% + 10px);
+    top: calc(50%);
+    transform-origin: -10px 0px;
+    animation: time 43200s infinite linear;
+
+}
