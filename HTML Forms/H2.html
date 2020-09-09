@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> My first contact information form</title>
+</head>
+
+<body>
+    <form>
+        <fieldset>
+            <legend>My Data</legend>
+
+            <label><input type="radio" name="preferedTitle" value="Mr."/>Mr.</label> </br>
+            <label><input type="radio" name="preferedTitle" value="Mrs."/>Mrs.</label></br>
+            <label><input type="radio" name="preferedTitle" value="Miss"/>Miss</label></br>
+            <label><input type="radio" name="preferedTitle" value="Dr."/>Dr.</label> </br>
+
+            <p>
+            <label for="fname">First Name:</label>
+            <input type="text" name="fname" placeholder="First Name..." />
+            </p>
+
+            <p>
+                <label for="lname">Last Name:</label>
+                <input type="text" name="lname" placeholder="Last Name..." />
+                </p>
+            <p>
+            <label for="email">Email:</label>
+            <input type="email" name="email" placeholder="Email..." />
+            </p>
+
+            <p>
+            <label for="phone">Phone Number:</label>
+            <input type="number" name="phone" placeholder="Phone Number" min="0" />
+            </p>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Delivery Adress</legend>
+
+            <p>
+            <label for="county">County:</label>
+            <select name="county">
+                <option value="CJ">Cluj</option>
+                <option value="SJ">Salaj</option>
+            </select>
+             </p>
+
+             <p>
+            <label for="city">City:</label>
+            <select name="city">
+                <option value="Cluj-Napoca">Cluj-Napoca</option>
+                <option value="Turda">Turda</option>
+                <option value="Zalau">Zalau</option>
+            </select>
+             </p>
+
+             <p>
+            <label for="adress">Adress:</label>
+            <textarea name="adress"rows="6" cols="100"></textarea>
+             </p>
+
+            </fieldset>
+
+        <fieldset>
+            <legend>Terms and conditions</legend>
+
+            <p>
+            <label><input name="terms" type="checkbox"/>Accept Terms and Conditions.</label></p>
+        </fieldset>
+
+        <p>
+        <button type="save">
+                Save Data
+        </button>
+
+        <input type="submit" value="Submit"/>
+        </p>
+    </form>
+</body>
+
+</html>
