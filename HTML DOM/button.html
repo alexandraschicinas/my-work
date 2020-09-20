@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Button</title>
+       
+    </head>
+    <body>
+        <button id = "mybutton">Touch me!</button>
+        <script>
+            document.getElementById("mybutton").onmouseover = function (){mouseOver()}
+            document.getElementById("mybutton").onmouseout = function (){mouseOut()}
+
+            function mouseOver(){
+                document.getElementById("mybutton").innerHTML = "Hovered";
+            }
+
+            function mouseOut(){
+                document.getElementById("mybutton").innerHTML = "Touch me";
+            }
+        </script>
+    </body>
+</html>
