@@ -21,7 +21,7 @@ class person {
         console.log(`I try to sleep eight hours every night.`);
     }
 }
-const me = new person ("Alexandra", "feminin");
+const me = new person("Alexandra", "feminin");
 console.log(me.gender);
 me.wakeUp(6);
 me.eat("chocolate");
@@ -42,20 +42,20 @@ class student extends person {
         
     }
 }
-const jake = new student("Jake", "masculin", 3, "UmfCluj" );
+const jake = new student("Jake", "masculin", 3, "UmfCluj");
 
-console.log(jake.name, jake.year, );
+console.log(jake.name, jake.year);
 jake.learn("english");
 console.log(jake.courses);
 
-const sara = new student("Sara","feminin", 1, "UBB",);
+const sara = new student("Sara","feminin", 1, "UBB");
 console.log(sara.university, sara.year, sara.courses);
 sara.wakeUp("6:00");
 
 sara.learn("informatics");
 console.log(sara.courses);
 
-const jane = new student ("Jane", "feminin", 6, "USAMV");
+const jane = new student("Jane", "feminin", 6, "USAMV");
 console.log(jane.name, jane.gender);
 
 jane.work();
@@ -75,7 +75,7 @@ class teacher extends person {
 
 }
 
-const math = new teacher ("Mr. Doc", "masculin", 8, "UMF");
+const math = new teacher("Mr. Doc", "masculin", 8, "UMF");
 console.log(math.name, math.gender, math.yearsOfExperience, math.university);
 
 math.teach("mathematics");
