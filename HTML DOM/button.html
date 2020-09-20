@@ -1,22 +1,25 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Button</title>
-       
-    </head>
-    <body>
-        <button id = "mybutton">Touch me!</button>
-        <script>
-            document.getElementById("mybutton").onmouseover = function (){mouseOver()}
-            document.getElementById("mybutton").onmouseout = function (){mouseOut()}
+  <head>
+    <title>Button</title>
+  </head>
+  <body>
+    <button id="mybutton">Touch me!</button>
+    <script>
+      document.getElementById("mybutton").onmouseover = function () {
+        mouseOver();
+      };
+      document.getElementById("mybutton").onmouseout = function () {
+        mouseOut();
+      };
 
-            function mouseOver(){
-                document.getElementById("mybutton").innerHTML = "Hovered";
-            }
-
-            function mouseOut(){
-                document.getElementById("mybutton").innerHTML = "Touch me";
-            }
-        </script>
-    </body>
+      function mouseOver() {
+        document.getElementById("mybutton").innerHTML = "Hovered";
+      }
+      // above and beyond as usual :clap: Awesome that you took the time to also change the text back after the mouse is no longer on the button
+      function mouseOut() {
+        document.getElementById("mybutton").innerHTML = "Touch me";
+      }
+    </script>
+  </body>
 </html>
