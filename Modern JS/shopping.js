@@ -1,22 +1,22 @@
 class shoppingCard {
-    constructor (items, totalPrice){
+    constructor(){
         this.items = [];
         this.totalPrice = 0;
     }
 
-    addItem (product, price){
+    addItem(product, price) {
         this.items.push(product);
         this.totalPrice = this.totalPrice + price;         
         }
 
-    removeItem(product, price){
-        this.items.shift(product);
+    removeItem(product, price) {
+        const indexOfItemtobeRemoved = this.items.findIndex ( item => item === product);
+        this.items.splice(indexOfItemtobeRemoved, 1);
         this.totalPrice = this.totalPrice - price;
     }
 
-    total( totalPrice, items){
-        this.items = items.length;
-        this.totalPrice= this.totalPrice;
+    total() {
+        console.log(shoppingCard.totalPrice, shoppingCard.items.length);
     }       
     }
 
@@ -40,7 +40,7 @@ card2.addItem("tomato", 6);
 card2.addItem("meat", 60);
 console.log(card2.items, card2.totalPrice);
 
-card2.removeItem("onion", 8);
+card2.removeItem("broccoli", 8);
 console.log(card2.items, card2.totalPrice);
 
 console.log(card2.totalPrice, card2.items.length)
@@ -53,7 +53,7 @@ card3.addItem("parfume", 780);
 card3.addItem("body cream", 35);
 console.log(card3.items, card3.totalPrice);
 
-card3.removeItem("body cream", 35);
+card3.removeItem("parfume", 780);
 console.log(card3.items, card3.totalPrice);
 
 console.log(card3.totalPrice, card3.items.length);
