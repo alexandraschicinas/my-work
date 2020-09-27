@@ -4,7 +4,7 @@ var animal = {
     gut : ["bones", "meat", "pedigree",],
 
     eat: function (tastyFood) {
-        this.gut = this.gut + tastyFood;
+        this.gut = this.gut.concat(tastyFood);
         console.log ("Eat:", tastyFood);
 
     },
