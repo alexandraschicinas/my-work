@@ -3,6 +3,13 @@ var animal = {
   name: "Pancho",
   gut: ["bones", "meat", "pedigree"],
 
+<<<<<<< HEAD
+    eat: function (tastyFood) {
+        this.gut = this.gut.concat(tastyFood);
+        console.log ("Eat:", tastyFood);
+
+    },
+=======
   eat: function (tastyFood) {
     // we can't add items to the array using the '+' operator
     // if you want to add a list of foods that the puppy can enjoy then you need to use the `concat` function of arrays
@@ -10,6 +17,7 @@ var animal = {
     this.gut = this.gut + tastyFood;
     console.log("Eat:", tastyFood);
   },
+>>>>>>> master
 };
 console.log(animal);
 console.log("Before", animal.gut);

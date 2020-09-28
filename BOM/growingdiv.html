@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Growing box
+        </title>
+        <style>
+            body{
+                display: flex;
+                justify-content: center;
+            
+            }
+            #red {
+                background-color: red;
+                width: 100px;
+                height: 100px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id = "red"></div>
+
+        <script>
+            const GrowingBox = () => {
+                var w = 100;
+             if (w < 1500) {
+                w = w + 5;
+                document.getElementById('red').style.width = w + 'px';
+            } else {
+                clearInterval(GBox);
+            }             
+            }
+            const GBox = setInterval(GrowingBox,1000);
+        </script>
+    </body>
+</html>

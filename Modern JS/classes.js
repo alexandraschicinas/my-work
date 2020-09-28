@@ -47,7 +47,11 @@ console.log(jake.name, jake.year);
 jake.learn("english");
 console.log(jake.courses);
 
+<<<<<<< HEAD
+const sara = new student("Sara","feminin", 1, "UBB");
+=======
 const sara = new student("Sara", "feminin", 1, "UBB");
+>>>>>>> master
 console.log(sara.university, sara.year, sara.courses);
 sara.wakeUp("6:00");
 

@@ -1,0 +1,63 @@
+.flex-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    margin: 0 px;
+    padding: 0 px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+    #one {
+        width :500px;
+        height: 100vh;
+        background-color:black;
+        color: greenyellow;
+        align-items: flex-start;
+        border: 5px solid greenyellow;
+        border-radius: 5%;
+        }
+
+    #two {
+        width :500px;
+        height: 100vh;
+        background-color:black;
+        color: greenyellow;
+        align-items: center;
+        border: 5px solid greenyellow;
+        border-radius: 5%;
+    }
+    #three {
+        width :500px;
+        height: 100vh;
+        background-color: black;
+        color: greenyellow;
+        align-items: flex-end;
+        border: 5px solid greenyellow;
+        border-radius: 5%;
+    }
+
+   #img {
+       width: 100px;
+       height: 100px;
+       display: block;
+       margin-left: auto;
+       margin-right: auto;
+   }
+   #img2 {
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+   }
+   #img3 {
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+   }
