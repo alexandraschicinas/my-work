@@ -18,5 +18,8 @@ const createX= function (i) {
     line.innerHTML = text;
     ul[i].appendChild(line);
  }
-   createList([0], "Onion");
+   createList( [0],"Onion");
 
+   createList ([0],"broccoli")
+
+   createList ([0],"milk")
