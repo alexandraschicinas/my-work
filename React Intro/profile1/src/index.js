@@ -9,8 +9,7 @@ const user = {
   lastName : "Chicinas",
   ocupation : "Pharmacy Manager",
   school : "UMF CLUJ",
-  fb : <a href ="https://www.facebook.com/Alexandra.Szuszana/" >FB</a>,
-  insta: < a href = "https://www.instagram.com/alexandras.chicinas/?hl=en">Insta</a>
+  
  
 
 };
@@ -29,7 +28,7 @@ ReactDOM.render(
       <h3 id = "info1">{user.school}</h3>
     </div>
     <div>
-      <button id = "fb"> {user.fb} </button><button id = "insta">{user.insta}</button>
+      <button id = "fb"><a href ="https://www.facebook.com/Alexandra.Szuszana/" >FB</a></button><button id = "insta">insta: < a href = "https://www.instagram.com/alexandras.chicinas/?hl=en">Insta</a></button>
     </div>
     <div id = "contact"> 
       <p>Contact</p>
