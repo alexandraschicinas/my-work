@@ -1,0 +1,41 @@
+body{
+    background-color: #787878;
+    margin: 0px;
+    padding: 0px;
+    width: 100vw;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    
+}
+.profile{
+    width:300px;
+    height: 500px;
+    background-color: ivory;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+    top: 200px;
+    left: 0px;
+    border: 2px black solid;
+    box-shadow:2px 2px 4px black;
+
+}
+.profile img{
+    
+    width: 300px;
+    height: 250px;
+}
+#info {
+    color: grey;
+    text-size-adjust: 20px;
+}
+
+#info1 {
+    text-size-adjust: 15px;
+}
+#contact {
+    background-color: #000000;
+    color: #fffff0;
+    height: 40px;
+}
