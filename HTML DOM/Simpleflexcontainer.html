@@ -1,45 +1,48 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title> Simple flex-container</title>
-        <style>
-            .flex-container {
-                display: flex;
-                width: 100vw;
-                height: 100vh;
-            }
-            .flex-items {
-                background-color: cadetblue;
-                margin: 10px;
-                width: 100px;
-                height: 100px;
-                justify-content: center;
-            }
-        </style>
-    </head>
+  <head>
+    <title>Simple flex-container</title>
+    <style>
+      .flex-container {
+        display: flex;
+        width: 100vw;
+        height: 100vh;
+      }
+      .flex-items {
+        background-color: cadetblue;
+        margin: 10px;
+        width: 100px;
+        height: 100px;
+        justify-content: center;
+      }
+    </style>
+  </head>
 
-    <div class = "flex-container">
-        <div class = "flex-items"></div>
-        <div class = "flex-items"></div>
-        <div class = "flex-items"></div>
-        <div class = "flex-items"></div>
-        <div class = "flex-items"></div>
-        <div class = "flex-items"></div>
-        <div class = "flex-items"></div>
-        <div class = "flex-items"></div>
-        <div class = "flex-items"></div>
-        <div class = "flex-items"></div>
-    </div>
-    <script>
-        const items = document.getElementsByClassName("flex-items");
-        const container = document.getElementsByClassName("flex-container");
+  <div class="flex-container">
+    <div class="flex-items"></div>
+    <div class="flex-items"></div>
+    <div class="flex-items"></div>
+    <div class="flex-items"></div>
+    <div class="flex-items"></div>
+    <div class="flex-items"></div>
+    <div class="flex-items"></div>
+    <div class="flex-items"></div>
+    <div class="flex-items"></div>
+    <div class="flex-items"></div>
+  </div>
+  <script>
+    const items = document.getElementsByClassName("flex-items");
+    const container = document.getElementsByClassName("flex-container");
 
-        for (let index = 0; index < items.length; index++) {
-            if ([index]%3 == 2){
-            items[index].style.backgroundColor = "red";
-        } if ([index]%3 == 2){
-            items[index].innerHTML = "fizz";
-        }
-        }
-    </script>
+    for (let index = 0; index < items.length; index++) {
+      // please remove the square brackets around index here
+      if ([index] % 3 == 2) {
+        items[index].style.backgroundColor = "red";
+      }
+      // also here
+      if ([index] % 3 == 2) {
+        items[index].innerHTML = "fizz";
+      }
+    }
+  </script>
 </html>
