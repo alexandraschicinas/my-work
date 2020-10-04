@@ -35,12 +35,10 @@
     const container = document.getElementsByClassName("flex-container");
 
     for (let index = 0; index < items.length; index++) {
-      // please remove the square brackets around index here
-      if ([index] % 3 == 2) {
+      if (index % 3 == 2) {
         items[index].style.backgroundColor = "red";
       }
-      // also here
-      if ([index] % 3 == 2) {
+      if (index % 3 == 2) {
         items[index].innerHTML = "fizz";
       }
     }

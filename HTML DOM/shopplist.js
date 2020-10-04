@@ -14,6 +14,10 @@ const createList = function ( text) {
 
    createList ("Broccoli");
 
+   createList ("Milk");
+
+   createList ("Tomato");
+
 
 function inputLength() {
 	return input.value.length;

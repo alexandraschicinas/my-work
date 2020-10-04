@@ -18,21 +18,24 @@
     <div id="red"></div>
 
     <script>
+      let w = 100;
+      const GrowingBox = setInterval(() => {
+          w = w + 100;
+      if ( w > window.innerWidth) {
+            clearInterval(GrowingBox);
+       } else
+        document.getElementById("red").style.width = w + "px";
+      }, 1000);
+
+       
+      
       // this currently does not work :(, as an ideea try and move the condition outside the interval function
       // and clear the interval once that condition is met.
       // to speed testing the solution instead of adding with 5 add with 200
       // also please try and use let instead of var
-      const GrowingBox = () => {
-        var w = 100;
+      
         // instead of checking with 1500 we could check with window.innerWidth to work with any resolution
-        if (w < 1500) {
-          w = w + 5;
-          document.getElementById("red").style.width = w + "px";
-        } else {
-          clearInterval(GBox);
-        }
-      };
-      const GBox = setInterval(GrowingBox, 1000);
+        
     </script>
   </body>
 </html>
