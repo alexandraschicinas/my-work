@@ -1,0 +1,43 @@
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.Comm {
+  width: 300px;
+  height: 100px;
+  background-color: lightblue;
+  border: 2px solid blue;
+  box-shadow: 3px 3px 3px grey;
+  border-radius: 10px;
+  margin: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex: row;
+}
+
+.Infos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.Pic {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+.Infos-name {
+  font-weight: solid;
+  font-family: fantasy;
+  align-self: center;
+}
+.Comm-text {
+  font-family: sans-serif;
+  align-self: center;
+}
+
+.date{
+  font-size: x-small;
+  font-weight: 10px;
+  margin: 5px;
+}
