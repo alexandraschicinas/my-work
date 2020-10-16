@@ -19,7 +19,8 @@ class App extends React.Component {
   render() {
     const filteredList = this.state.list.filter((list) => {
       return list.name
-       .includes(this.state.searchfield);
+      .toLowerCase()
+       .includes(this.state.searchfield.toLowerCase());
     });
     return (
       <div>

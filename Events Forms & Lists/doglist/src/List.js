@@ -1,50 +1,50 @@
 export const list = [
     {
       id: 1,
-      name: 'bulldog',
+      name: 'Bulldog',
     },
     {
       id: 2,
-      name: 'husky',
+      name: 'Husky',
       
     },
     {
       id: 3,
-      name: 'tackel',
+      name: 'Tackel',
       
     },
     {
       id: 4,
-      name: 'labrador',
+      name: 'Labrador',
      
     },
     {
       id: 5,
-      name: 'pechinez',
+      name: 'Pechinez',
       
     },
     {
       id: 6,
-      name: 'shitzu',
+      name: 'Shitzu',
     
     },
     {
       id: 7,
-      name: 'pomeranian',
+      name: 'Pomeranian',
     },
     {
       id: 8,
-      name: 'dalmatian',
+      name: 'Dalmatian',
       
     },
     {
       id: 9,
-      name: 'pug',
+      name: 'Pug',
       
     },
     {
       id: 10,
-      name: 'terrier',
+      name: 'Terrier',
      
     }
   ];
