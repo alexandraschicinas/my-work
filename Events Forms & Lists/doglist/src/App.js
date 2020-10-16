@@ -22,7 +22,7 @@ class App extends React.Component {
        .includes(this.state.searchfield);
     });
     return (
-      <div classname>
+      <div>
         <h1>My Dog List</h1>
         <SearchBox searchChange={this.onSearchChange} />
         <Doglist list={filteredList} />
