@@ -5,7 +5,7 @@ const Doglist = ({ list }) => {
   return (
     <div>
       {list.map((dog, i) => {
-        return <DogCard key={i} name={list[i].name} />;
+        return <DogCard key={i} name={list[i]} />;
       })}
     </div>
   );
