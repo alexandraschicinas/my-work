@@ -1,13 +1,12 @@
 import React from "react";
 import "./App.css";
-import {list} from "./List";
+import { list } from "./List";
 import SearchBox from "./SearchBox";
 import Doglist from "./Doglist";
 
-
 class App extends React.Component {
   constructor() {
-    super()
+    super();
     this.state = {
       list: list,
       searchfield: "",
@@ -19,8 +18,8 @@ class App extends React.Component {
   render() {
     const filteredList = this.state.list.filter((list) => {
       return list.name
-      .toLowerCase()
-       .includes(this.state.searchfield.toLowerCase());
+        .toLowerCase()
+        .includes(this.state.searchfield.toLowerCase());
     });
     return (
       <div clasName="doglist">

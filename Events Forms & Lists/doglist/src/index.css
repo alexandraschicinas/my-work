@@ -4,6 +4,5 @@ body {
   display: flex;
   justify-content: center;
   background-color: rgb(114, 188, 245);
-  font-family: 'Courier New', Courier, monospace;
-
+  font-family: "Courier New", Courier, monospace;
 }

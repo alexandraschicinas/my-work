@@ -2,11 +2,12 @@ import React from "react";
 
 const DogCard = (props) => {
   return (
-    <div >
+    <div>
       <ul>
-      <h2><li>{props.name}</li></h2>
+        <h2>
+          <li>{props.name}</li>
+        </h2>
       </ul>
-      
     </div>
   );
 };

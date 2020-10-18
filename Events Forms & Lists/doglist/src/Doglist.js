@@ -1,7 +1,7 @@
 import React from "react";
 import DogCard from "./DogCard";
-  
-const Doglist = ({list}) => {
+
+const Doglist = ({ list }) => {
   return (
     <div>
       {list.map((dog, i) => {
