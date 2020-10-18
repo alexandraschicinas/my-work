@@ -1,14 +1,23 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-const SearchBox = ({searchfield, searchChange}) => {
+const SearchBox = ({searchChange}) => {
+
+    const [searchfield, setSearchfield]= useState("");
+    const handleChange = (event) => {
+        setSearchfield(event.target.value)
+    }
+    const handleClick = () => {
+        searchChange(searchfield)
+    }
     return (
         <div>
             <input
             type="search"
-            value = {searchfield}
+            value={searchfield}
             placeholder="search dog..."
-            onChange={searchChange}
+            onChange={handleChange}
             />
+          <button onClick={handleClick}>Submit</button>  
         </div>
     )
 }
