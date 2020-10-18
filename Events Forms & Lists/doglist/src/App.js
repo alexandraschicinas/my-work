@@ -23,7 +23,7 @@ class App extends React.Component {
        .includes(this.state.searchfield.toLowerCase());
     });
     return (
-      <div>
+      <div clasName="doglist">
         <h1>My Dog List</h1>
         <SearchBox searchChange={this.onSearchChange} />
         <Doglist list={filteredList} />
