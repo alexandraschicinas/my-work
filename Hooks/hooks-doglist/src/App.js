@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-//import { list as u } from "./List";
+//import { list} from "./List";
 import SearchBox from "./SearchBox";
 import Doglist from "./Doglist";
 
@@ -11,13 +11,11 @@ function App() {
     setSearchfield(search);
   };
 
-  // const onSetList = (event) => {
-  //   setList(event.target.list);
-  // }
   useEffect(() => {
     fetch("https://dog.ceo/api/breeds/list")
       .then((response) => response.json())
       .then((list) => {
+        console.log(list.message)
         setList(list.message);
       });
   }, []);
