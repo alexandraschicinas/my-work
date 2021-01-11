@@ -4,7 +4,9 @@ import Menu from "./Navigations/Menu";
 import Header from "./Header";
 import Footer from "./Footer";
 import Navbar from "./Navbar";
-import Books from "./Books";
+import Books3 from "./Books3";
+// import Books from "./Books";
+// import booksMockData from "../mocks/books";
 
 class App extends Component {
   constructor(props) {
@@ -22,15 +24,15 @@ class App extends Component {
     }));
   };
 
-//   selectFilter = (filter) => {
-//     this.setState({
-//       selectedFilter: filter,
-//       books:
-//         filter === "All"
-//           ? booksMockData
-//           : booksMockData.filter((book) => book.category === filter),
-//     });
-//   };
+  // selectFilter = (filter) => {
+  //   this.setState({
+  //     selectedFilter: filter,
+  //     books:
+  //       filter === "All"
+  //         ? booksMockData
+  //         : booksMockData.filter((book) => book.category === filter),
+  //   });
+  // };
 
   render() {
 //     const filters = ["All", "Design", "Mobile", "DevOps", "Essentials"];
@@ -52,11 +54,16 @@ class App extends Component {
           toggleMenu={this.toggleMenu}
         />
 
-        <Navbar toggleMenu = {this.toggleMenu} />
+        <Navbar toggleMenu={this.toggleMenu} />
 
         <Header title="By FastTrackIT" />
 
-        <Books />
+        <Books3 />
+        {/* <Books
+          selectedFilter={this.state.selectedFilter}
+          selectFilter={this.selectFilter}
+          books={this.state.books}
+        /> */}
 
         <About />
         
