@@ -3,12 +3,12 @@ import ReactDOM from 'react-dom';
 import * as serviceWorker from './serviceWorker';
 import "./index.css";
 
-const imgUrl = "https://scontent-otp1-1.xx.fbcdn.net/v/t31.0-8/15250684_1353340791367009_5820004535474663832_o.jpg?_nc_cat=104&_nc_sid=a4a2d7&_nc_ohc=9HC8U4Be8q8AX-SbNWo&_nc_ht=scontent-otp1-1.xx&oh=85cc89cf4f71f5e192201276529e4f9e&oe=5F98C191";
+const imgUrl = "https://scontent.fclj3-1.fna.fbcdn.net/v/t1.0-9/39270816_2070634866304261_5069344642428829696_n.jpg?_nc_cat=108&ccb=2&_nc_sid=174925&_nc_ohc=_eI8Xa7ULHMAX8qtHer&_nc_ht=scontent.fclj3-1.fna&oh=b2cab665ecc1c1712ba5fd17a4124499&oe=6021EDFF";
 const user = {
   firstName : "Alexandra",
   lastName : "Chicinas",
-  ocupation : "Pharmacy Manager",
-  school : "UMF CLUJ",
+  ocupation : "Junior Web Developer",
+  school : "FastTrackIT",
   fb : <a href ="https://www.facebook.com/Alexandra.Szuszana/" >FB</a>,
   insta: < a href = "https://www.instagram.com/alexandras.chicinas/?hl=en">Insta</a>
  
@@ -17,7 +17,7 @@ const user = {
 ReactDOM.render(
  <div className = "profile">
     <div>   
-      < img src = {imgUrl} alt = "Profile"/>
+      < img src = {imgUrl} alt = "ProfilePicture"/>
     </div> 
     <div>
       <h1> {user.firstName+ " " + user.lastName}</h1>

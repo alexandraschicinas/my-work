@@ -1,4 +1,3 @@
-// I'm really glad you took the time to implement the code-together from the course congratulations :clap:
 class person {
   constructor(name, gender) {
     this.name = name;
@@ -47,11 +46,7 @@ console.log(jake.name, jake.year);
 jake.learn("english");
 console.log(jake.courses);
 
-<<<<<<< HEAD
 const sara = new student("Sara","feminin", 1, "UBB");
-=======
-const sara = new student("Sara", "feminin", 1, "UBB");
->>>>>>> master
 console.log(sara.university, sara.year, sara.courses);
 sara.wakeUp("6:00");
 

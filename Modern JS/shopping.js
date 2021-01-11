@@ -1,5 +1,4 @@
 class shoppingCard {
-<<<<<<< HEAD
     constructor(){
         this.items = [];
         this.totalPrice = 0;
@@ -20,32 +19,6 @@ class shoppingCard {
         console.log(shoppingCard.totalPrice, shoppingCard.items.length);
     }       
     }
-=======
-  constructor(items, totalPrice) {
-    this.items = [];
-    this.totalPrice = 0;
-  }
-
-  addItem(product, price) {
-    this.items.push(product);
-    this.totalPrice = this.totalPrice + price;
-  }
-
-  removeItem(product, price) {
-    // shift only removes the first item from the list.
-    // to remove any item from an array we can either use filter to exclude the item from the result.
-    // Or we need to use findIndex to find the index of the item we want to delete and then with splice to actually remove it
-    this.items.shift(product);
-    this.totalPrice = this.totalPrice - price;
-  }
-
-  // in this method we need only to do a console.log of the length of the items array and the total price. We don't need to reassign them
-  total(totalPrice, items) {
-    this.items = items.length;
-    this.totalPrice = this.totalPrice;
-  }
-}
->>>>>>> master
 
 const card1 = new shoppingCard();
 card1.addItem("dress", 160);
@@ -56,7 +29,6 @@ console.log(card1.items, card1.totalPrice);
 card1.removeItem("dress", 160);
 console.log(card1.items, card1.totalPrice);
 
-// this line should appear in the total method and we need to call it here
 console.log(card1.totalPrice, card1.items.length);
 
 const card2 = new shoppingCard();

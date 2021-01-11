@@ -3,7 +3,7 @@ body{
     margin: 0px;
     padding: 0px;
     width: 100vw;
-    height: 100px;
+    height: 10px;
     display: flex;
     justify-content: center;
     
@@ -21,10 +21,10 @@ body{
     box-shadow:2px 2px 4px black;
 
 }
-.profile img{
-    
+.profile img{  
     width: 300px;
     height: 250px;
+   
 }
 #info {
     color: grey;
